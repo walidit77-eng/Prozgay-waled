@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walid77 Portfolio</title>
 
+<style>
+:root{
+--bg:#0f0f0f;
+--text:white;
+--card:#1a1a1a;
+--gold:gold;
+}
+
+.light{
+--bg:#f5f5f5;
+--text:#111;
+--card:white;
+}
+
+body{
+margin:0;
+font-family:-apple-system;
+background:var(--bg);
+color:var(--text);
+text-align:center;
+transition:0.3s;
+}
+
+header{
+background:linear-gradient(90deg,gold,orange);
+color:black;
+padding:20px;
+font-size:22px;
+font-weight:bold;
+}
+
+section{
+padding:40px 20px;
+}
+
+.card{
+background:var(--card);
+padding:20px;
+border-radius:15px;
+margin:20px auto;
+max-width:400px;
+box-shadow:0 0 15px rgba(255,215,0,0.2);
+}
+
+h2{
+color:var(--gold);
+}
+
+img{
+width:120px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+button{
+background:var(--gold);
+border:none;
+padding:12px;
+width:100%;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
+}
+
+.toggle{
+position:fixed;
+top:15px;
+left:15px;
+width:auto;
+padding:8px 12px;
+}
+
+footer{
+padding:20px;
+color:gray;
+}
+</style>
+</head>
+
+<body>
+
+<button class="toggle" onclick="toggleMode()">🌙 / ☀️</button>
+
+<header>
+👨‍💻 Walid77 - Web Developer
+</header>
+
+<section>
+
+<div class="card">
+<img src="https://via.placeholder.com/120" alt="Profile">
+<h2>دەربارەی من</h2>
+<p>من فێرخوازێکی وێب دیڤەلۆپمێنتم و کار دەکەم لەسەر HTML, CSS, JavaScript.</p>
+</div>
+
+<div class="card">
+<h2>شارەزاییەکانم</h2>
+<p>✔ HTML<br>
+✔ CSS<br>
+✔ JavaScript<br>
+✔ Responsive Design</p>
+</div>
+
+<div class="card">
+<h2>پڕۆژەکانم</h2>
+<p>🌐 Tech Website<br>
+📱 Mobile Friendly Site<br>
+🎨 Portfolio Design</p>
+</div>
+
+<div class="card">
+<h2>پەیوەندی</h2>
+<p>📧 walid@email.com</p>
+<button onclick="contact()">نامە بنێرە</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 Walid77 - All Rights Reserved
+</footer>
+
+<script>
+function toggleMode(){
+document.body.classList.toggle("light");
+}
+
+function contact(){
+alert("دەتوانیت ئیمەیڵی ڕاستەقینەکەت دابنێیت 🔥");
+}
+</script>
+
+</body>
+</html>
